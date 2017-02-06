@@ -67,5 +67,5 @@ Starting with a client making a GET request to a particular URL, describe how
 the parts of Rails interact to produce and send a response.
 
 ```md
-The client makes a GET request to the server. The router receives the request and based on the URL and the VERB tells the appropriate controller what action to perform. The controller then passes any necessary data and commands to the model, which performs the action requested and returns data if necessary, or a confirmation if no data needs to be returned. The controller receives this returned information and translates it into JSON using the serializer (I think this is where the serializer gets involved), then sends it back to the router. Once the router has received the response.
+The client makes a GET request to the server. The router receives the request and based on the URL and the VERB tells the appropriate controller what action to perform. The controller then passes any necessary data and commands to the model, which performs the action requested and returns data if necessary, or a confirmation if no data needs to be returned. The controller receives this returned information and translates it into JSON using the serializer (I think this is where the serializer gets involved), then sends it back to the client.
 ```
